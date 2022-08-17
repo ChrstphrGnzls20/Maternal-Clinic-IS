@@ -34,10 +34,26 @@ body {
   /* border: 2px solid black; */
 }
 
+.bg-custom-primary {
+  background-color: var(--primary-color);
+}
+
 .bg-custom-secondary {
   background-color: var(--secondary-color);
 }
 
-.btn-custom-hover-secondary:hover {
+.bg-custom-tertiary {
   background-color: var(--tertiary-color);
+}
+
+.bg-custom-contrast {
+  background-color: var(--contrast-color);
+}
+
+.btn-custom-hover-tertiary:hover {
+  background-color: var(--tertiary-color);
+}
+
+.btn-custom-hover-primary:hover {
+  background-color: var(--primary-color);
 }
