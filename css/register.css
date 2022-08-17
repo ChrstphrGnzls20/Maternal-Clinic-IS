@@ -37,3 +37,7 @@ body {
 .bg-custom-secondary {
   background-color: var(--secondary-color);
 }
+
+.btn-custom-hover-secondary:hover {
+  background-color: var(--tertiary-color);
+}
