@@ -1,0 +1,42 @@
+.sidebar {
+  width: 4rem;
+  padding: 0;
+  overflow: hidden;
+
+  transition: all 200ms ease;
+}
+
+.sidebar:hover {
+  width: 11rem;
+}
+
+.sidebar .nav {
+  height: 100vh;
+}
+
+.sidebar .logo {
+  width: 30px;
+  height: auto;
+}
+
+.sidebar .nav-item:hover {
+  background-color: red;
+}
+
+.interface {
+  margin-left: 4rem;
+}
+
+.sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.nav-item span {
+  display: inline;
+}
+
+.nav-link + span {
+  margin-left: 10px;
+}

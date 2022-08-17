@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Bootstrap Please</title>
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./custom-style.css">
+</head>
+<body>
+    <nav class="nav top-nav">
+        
+        <ul>
+            <li>
+                <a href="#" class="sidebar-toggle">
+                    <i class="fa-solid fa-bars "></i>
+                </a>
+            </li>
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <nav class="nav sidebar">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house-user logo"></i>
+                    <span>Home</span>
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user logo" style="margin-left: 5px;"></i><span>Patients</span>
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-power-off logo" style="margin-left: 5px;"></i>
+                    <span>Logout</span>
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>Welcome to no Bootstrap!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ea veniam sequi. Sit harum ullam dicta tempore, incidunt ipsam eius eaque atque voluptate necessitatibus quibusdam vero quasi reprehenderit aperiam fuga deserunt veniam. Neque placeat dignissimos reiciendis consequatur cum quis aspernatur, animi ea veritatis, nulla id provident, harum laborum. Beatae voluptatibus, dignissimos autem, ad voluptas odio facilis fugiat alias est corrupti maxime ipsam temporibus nisi tempora nostrum. Molestiae impedit ipsum tempora, officiis, dolores nostrum id, corporis repellendus dolorem dolorum temporibus expedita ullam accusantium magnam explicabo in mollitia reprehenderit atque! Placeat deserunt dolorum quas quo iste sunt quae labore blanditiis voluptatum nemo corporis aliquam porro, ipsum dignissimos libero nam, atque deleniti. Explicabo nulla necessitatibus ipsa sed fugit possimus facere nesciunt quis! Blanditiis ducimus ad eius, error delectus possimus eligendi ipsam accusantium animi quasi! Voluptatum labore praesentium facere eos possimus sequi asperiores, voluptate excepturi, odit officiis maxime repellat minima harum architecto sint aut, temporibus ducimus inventore reiciendis perspiciatis neque! Earum perferendis iure nam totam labore similique, architecto voluptatum ipsum nulla? Dolore sunt quisquam, corrupti placeat, quas, odio sit fuga officiis laudantium ducimus molestiae cum? Iste labore architecto dolores aperiam eius voluptatem sint iure veniam assumenda veritatis quibusdam, recusandae quidem officiis delectus beatae laboriosam non debitis accusamus vero rerum consequatur est aliquid quisquam. Sed soluta recusandae natus molestiae ipsa amet esse ab ex accusamus, maxime delectus. Molestiae, vel mollitia. Consectetur ab mollitia at natus molestiae, ratione quis suscipit officia voluptatibus reiciendis distinctio ea corporis commodi culpa ad velit quo quia praesentium aliquid. Numquam, provident quisquam magnam facilis assumenda praesentium voluptates repellendus nisi perferendis reiciendis aliquid delectus aspernatur veniam nemo! Amet sunt dicta illo sit provident fuga voluptate nostrum eum nisi nobis quas eveniet tenetur beatae quisquam modi natus velit, blanditiis harum. Distinctio tempora exercitationem, optio quae adipisci delectus! Amet, ipsum blanditiis. Impedit, necessitatibus aspernatur.</p>
+    </section>
+
+    <script>
+        var sidebarToggle = document.getElementsByClassName("sidebar-toggle")[0];
+        var sidebar = document.getElementsByClassName("sidebar")[0];
+
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("expanded");
+        })
+    </script>
+</body>
+</html>

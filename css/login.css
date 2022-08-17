@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("./color-pallete.css");
+
+* {
+  font-family: var(--font-family), sans-serif;
+}
+
+.login-col {
+  min-height: 33.33333vh;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.login-col:nth-child(2) {
+  background-color: var(--tertiary-color);
+}
+
+.login-col:last-child {
+  background-color: var(--secondary-color);
+}
+
+.login-col h1 {
+  margin-top: 1rem;
+  color: var(--contrast-color);
+  /* font-size: clamp(1rem, 10vw, 2rem); */
+}
+
+.login-col img {
+  max-width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .login-col {
+    min-height: 100vh;
+  }
+  .login-col img {
+    max-width: 45%;
+  }
+  .login-col h1 {
+    margin-top: 7rem;
+  }
+}
