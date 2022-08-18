@@ -1,5 +1,3 @@
-// $("#next-btn").on("click", () => {
-//   setTimeout(() => {
-//     window.location = "register-2.html";
-//   }, 2000);
-// });
+$("#next-btn").on("click", () => {
+  window.location = "covid-tracing.html";
+});
