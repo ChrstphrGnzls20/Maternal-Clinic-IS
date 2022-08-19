@@ -1,4 +1,9 @@
 @import url("../css/theme.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: var(--font-family);
+}
 
 .nav ul li {
   list-style: none;
@@ -8,23 +13,14 @@
   text-decoration: none;
 }
 
-/* .side-panel-wrapper {
-  background-color: var(--primary-color);
-  width: 4.5rem;
-  position: fixed;
-  overflow: hidden;
-
-  transition: width 300ms ease;
-} */
-
 .side-panel {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  height: 100%;
+  width: 0; /* 0 width - change this with jQuery */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--primary-color); /* Black*/
+  background-color: var(--primary-color);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -75,18 +71,21 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {
-  .side-panel-wrapper {
-    position: static;
-    float: left;
-    width: 11rem;
-  }
+.scheduled-ctr .table {
+  line-height: 3rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  white-space: nowrap;
+}
 
-  .content {
-    margin-left: 12rem;
-  }
-} */
+.action-btns a {
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
