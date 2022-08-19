@@ -80,7 +80,8 @@
           </div>
         </nav>
 
-          <section class="content p-5">    
+          <section class="content p-5">  
+            <div class="overlay"></div>  
             <!-- Appointments waiting approval -->
            <div class="scheduled-ctr shadow-lg p-3">
             <h3 class="m-3">Appointments waiting approval</h3>
@@ -199,6 +200,7 @@
       $('#setting-toggle').click(function(){
         $('.side-panel').toggleClass('active');
         $('.interface').toggleClass('side-panel-active');
+        $('.overlay').toggleClass('active');
       })
     </script>
     
