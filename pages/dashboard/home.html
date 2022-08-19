@@ -25,6 +25,7 @@
 <body>
     <!-- TODO: fix dashboard side panel and interface -->
     <!-- TODO: dashboard responsiveness -->
+    <!-- TODO: calendar dashboard for doctor -->
 
     
 
@@ -61,7 +62,7 @@
     </ul>
         
       <main class="interface">
-        <nav class="navbar navbar-expand bg-custom-secondary topnav">
+        <nav class="navbar navbar-expand bg-custom-secondary topnav sticky-top">
           <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <div class="collapse navbar-collapse justify-content-end py-2" id="navbarNavAltMarkup">
@@ -79,12 +80,12 @@
           </div>
         </nav>
 
-          <section class="content p-5 ">    
-            <!-- <h1 class="py-2 mb-4 bg-dark content-title">Dashboard</h1> -->
-           <div class="scheduled-ctr">
-            <h3>Appointments waiting approval</h3>
+          <section class="content p-5">    
+            <!-- Appointments waiting approval -->
+           <div class="scheduled-ctr shadow-lg p-3">
+            <h3 class="m-3">Appointments waiting approval</h3>
             <div class="table-responsive-lg">
-              <table class="table table-bordered text-center">
+              <table class="table table-borderless table-hover text-center">
                 <thead>
                   <tr>
                     <th scope="col">Ref ID</th>
@@ -95,15 +96,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr >
                     <th scope="row">1</th>
                     <td>Christopher Gonzales</td>
                     <td>08/17/2022</td>
                     <td>08/13/2022</td>
                     <td class="d-flex justify-content-center border-0">
-                      <p class="m-0 me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></p>
+                      <div class="me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></div>
                     
-                      <p data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></p>
+                      <div data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></div>
                     </td>
                   </tr>
                   <tr>
@@ -112,9 +113,9 @@
                     <td>08/17/2022</td>
                     <td>08/13/2022</td>
                     <td class="d-flex justify-content-center border-0">
-                      <p class="m-0 me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></p>
+                      <div class="me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></div>
                     
-                      <p data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></p>
+                      <div data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></div>
                     </td>
                   </tr>
                   <tr>
@@ -123,17 +124,50 @@
                     <td>08/17/2022</td>
                     <td>08/13/2022</td>
                     <td class="d-flex justify-content-center border-0">
-                      <p class="m-0 me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></p>
+                      <div class="me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></div>
                     
-                      <p data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></p>
+                      <div data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            
-          </section>
-            
+            </div>
+            <!-- Appointments waiting approval End --> 
+
+            <!-- Confirmed Appointments -->
+            <div class="scheduled-ctr shadow-lg p-3 mt-5">
+              <h3 class="m-3">Confirmed Appointments</h3>
+              <div class="table-responsive-lg">
+                <table class="table table-borderless table-hover text-center">
+                  <thead>
+                    <tr>
+                      <th scope="col">Ref ID</th>
+                      <th scope="col">Patient</th>
+                      <th scope="col">Schedule Date</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr >
+                      <th scope="row">1</th>
+                      <td>Christopher Gonzales</td>
+                      <td>08/17/2022</td>
+                      <td>12:00 - 15:00</td>
+                      <td class="d-flex justify-content-center border-0">
+                        <div class="me-3" data-placement="top" data-toggle="tooltip" title="Approve"><button class="btn btn-success btn-xs" data-title="Approve" data-bs-toggle="modal" data-bs-target="#approve-modal"><i class="fa-solid fa-check fa-xs"></i></button></div>
+                      
+                        <div data-placement="top" data-toggle="tooltip" title="Disapprove"><button class="btn btn-danger btn-xs" data-title="Disapprove" data-bs-toggle="modal" data-bs-target="#approve-modal" ><i class="fa-solid fa-xmark "></i></button></div>
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            <!-- Confirmed Appointments End -->
+          </section> 
         </main>
 
 

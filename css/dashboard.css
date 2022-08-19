@@ -71,9 +71,19 @@
   }
 }
 
+.content {
+  background-color: #f8f9fd;
+  height: 100vh;
+}
+
+.scheduled-ctr {
+  background-color: white;
+  border-radius: 10px;
+}
+
 .scheduled-ctr .table {
   line-height: 3rem;
-  border: 2px solid var(--secondary-color);
+  /* border: 2px solid var(--secondary-color); */
   border-radius: 10px;
   white-space: nowrap;
 }
@@ -81,6 +91,14 @@
 .action-btns a {
   border-radius: 50%;
   background-color: red;
+}
+
+.table thead {
+  background-color: #efeff0;
+}
+
+.table td {
+  vertical-align: middle;
 }
 
 /* Medium devices (tablets, 768px and up) */
