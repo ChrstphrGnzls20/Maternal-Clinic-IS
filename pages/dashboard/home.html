@@ -31,28 +31,28 @@
 
     <ul class="nav flex-column side-panel">
       <li class="nav-item mb-3 py-1 d-flex align-items-center">
-        <a class="nav-link ms-1 w-100" href="#" data-bs-toggle="tooltip" title="Home">
+        <a class="nav-link ms-1 w-100" href="#" data-toggle="tooltip" title="Home">
           <i class="fa-solid fa-house-user fa-2x"></i>
           <span>Home</span>  
       </a>
       
       </li>
       <li class="nav-item py-1 mb-3 d-flex align-items-center">
-        <a class="nav-link ms-1 w-100" href="#" data-bs-toggle="tooltip" title="Patients">
+        <a class="nav-link ms-1 w-100" href="#" data-toggle="tooltip" title="Patients">
           <i class="fa-solid fa-hospital-user fa-2x"></i>
           <span>Patients</span>
         </a>
         
       </li>
       <li class="nav-item mb-2 py-1 d-flex align-items-center">
-        <a class="nav-link ms-1 w-100" href="#" data-bs-toggle="tooltip" title="Reports">
+        <a class="nav-link ms-1 w-100" href="#" data-toggle="tooltip" title="Reports">
           <i class="fa-solid fa-chart-pie fa-2x"></i>
           <span>Reports</span>
         </a>
         
       </li>
       <li class="nav-item mt-auto py-1 d-flex align-items-center">
-        <a class="nav-link ms-1 w-100" href="#" data-bs-toggle="tooltip" title="Account">
+        <a class="nav-link ms-1 w-100" href="#" data-toggle="tooltip" title="Account">
           <i class="fa-solid fa-user-gear fa-2x"></i>
           <span>Account</span>
         </a>
@@ -194,13 +194,19 @@
 
 
     <script>
-      $(document).ready(function(){
-        jQuery('[data-toggle="tooltip"]').tooltip();
-      })
-      $('#setting-toggle').click(function(){
+      function ToggleSidebar(){
         $('.side-panel').toggleClass('active');
         $('.interface').toggleClass('side-panel-active');
         $('.overlay').toggleClass('active');
+      }
+      $(document).ready(function(){
+        jQuery('[data-toggle="tooltip"]').tooltip({'placement': 'right'});
+      })
+      $('#setting-toggle').click(function(){
+        ToggleSidebar()
+      })
+      $('.overlay').click(function(){
+        ToggleSidebar()
       })
     </script>
     
